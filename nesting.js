@@ -96,11 +96,13 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
+let grumpyActivity = cat.catFriends[0].activities[1]
+let fluffy2ndFriend = cat.catFriends[1].name
 var grumpyActivity;
 var fluffy2ndFriend;
 
-
+console.log(grumpyActivity)
+console.log(fluffy2ndFriend)
 
 ////////// PROBLEM 4 //////////
 
@@ -138,8 +140,13 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
-
+const recordCleaner = () => {
+  for(let i = 0; i < myCar.accidents.length; i++){
+    myCar.accidents[i].atFaultForAccident = false
+  }
+}
+recordCleaner()
+console.log(myCar)
 
 
 ////////// PROBLEM 5 //////////
